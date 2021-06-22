@@ -1,7 +1,5 @@
 import React from 'react';
 import Wave from '@svgs/wave.svg';
-import Logo from '@imgs/logo-full.png';
-import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -21,7 +19,7 @@ export default function Hero() {
           </button>
         </div>
         <div className="heroImage relative">
-          <Image src={Logo} alt="logo" />
+          <img src="/imgs/logo-full.png" alt="" />
         </div>
         <Wave className="absolute -z-1 -bottom-16 left-0  w-screen" />
       </div>
