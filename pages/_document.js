@@ -30,7 +30,7 @@ class MyDocument extends Document {
           />
           <meta name="theme-color" content="#ca322f" />
         </Head>
-        <body>
+        <body className="overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
