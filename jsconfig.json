@@ -7,7 +7,6 @@
     "@imgs/*": ["public/imgs/*"],
     "@svgs/*": ["public/svgs/*"],
     },
-    "checkJs": true,
     "jsx": "react-jsx"
   }
 }
