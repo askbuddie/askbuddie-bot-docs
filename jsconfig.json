@@ -4,6 +4,7 @@
     "paths": {
     "@components/*": ["components/*"],
     "@utils/*": ["utils/*"],
+    "@imgs/*": ["public/imgs/*"],
     "@svgs/*": ["public/svgs/*"],
     },
     "checkJs": true,
