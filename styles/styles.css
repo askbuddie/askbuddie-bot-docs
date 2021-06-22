@@ -5,3 +5,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './custom.css';
+
+@layer components {
+  .btn {
+    @apply w-max px-4 py-2 font-medium rounded-md bg-primary-400 text-white;
+  }
+
+  .btn--outline {
+    @apply bg-transparent border-2 border-current border-solid;
+  }
+}
