@@ -1,0 +1,23 @@
+:root {
+  --brand-400: #ca322f;
+}
+
+.heroImage::before,
+.heroImage::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 295px;
+  height: 420px;
+  background: black;
+}
+
+.heroImage::before {
+  background: grey;
+}
+
+.heroImage::after {
+  top: -10vh;
+  right: 0;
+  background: var(--brand-400);
+}
