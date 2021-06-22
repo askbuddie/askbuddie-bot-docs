@@ -4,6 +4,7 @@
     "paths": {
     "@components/*": ["components/*"],
     "@utils/*": ["utils/*"],
+    "@svgs/*": ["public/svgs/*"],
     },
     "checkJs": true,
     "jsx": "react-jsx"
