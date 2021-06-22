@@ -1,5 +1,7 @@
 import React from 'react';
 import Wave from '@svgs/wave.svg';
+import Logo from '@imgs/logo-full.png';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -7,7 +9,7 @@ export default function Hero() {
       <div className="container min-h-screen flex items-center justify-between">
         <div>
           <h1 className="font-heading text-7xl font-extrabold mb-6">
-            Ask Buddie's
+            Ask Buddie&apos;s
             <span className="text-primary-400 mt-4 block">Bot Buddy !</span>
           </h1>
           <p>
@@ -19,7 +21,7 @@ export default function Hero() {
           </button>
         </div>
         <div className="heroImage relative">
-          <img src="/imgs/logo-full.png" alt="logo" />
+          <Image src={Logo} alt="logo" />
         </div>
         <Wave className="absolute -z-1 -bottom-16 left-0  w-screen" />
       </div>
