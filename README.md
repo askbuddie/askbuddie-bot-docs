@@ -37,8 +37,8 @@ If you want to add new feature to the bot, please raise an issue as well as join
 ### Development Setup
 
 ```
-npm install
-npm run dev // for development
+yarn install
+yarn dev // for development
 ```
 
 ### License
