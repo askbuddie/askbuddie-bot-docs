@@ -14,15 +14,15 @@ export default function Heading({ level = 1, children, modifier }) {
       break;
     case 4:
       HeadingLevel = 'h4';
-      headingClass = 'text-2xl font-bold';
+      headingClass = 'text-3xl font-bold';
       break;
     case 5:
       HeadingLevel = 'h5';
-      headingClass = 'text-l font-medium';
+      headingClass = 'text-2xl';
       break;
     case 6:
       HeadingLevel = 'h6';
-      headingClass = 'text-6xl font-medium';
+      headingClass = 'text-xl';
       break;
     default:
       HeadingLevel = 'h1';
