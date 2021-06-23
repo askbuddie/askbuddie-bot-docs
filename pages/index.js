@@ -1,4 +1,4 @@
-import Nav from '@components/Nav/Nav';
+import Nav from '@components/Nav';
 import Hero from '@components/Landing/Hero';
 import Features from '@components/Landing/Features';
 import Head from 'next/head';
