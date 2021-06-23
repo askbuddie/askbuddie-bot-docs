@@ -1,5 +1,6 @@
 :root {
   --brand-400: #ca322f;
+  --brand-RGB: 202, 50, 47;
 }
 
 .heroImage::before,
@@ -9,15 +10,37 @@
   z-index: -1;
   width: 295px;
   height: 420px;
-  background: black;
 }
 
 .heroImage::before {
-  background: grey;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .heroImage::after {
   top: -10vh;
   right: 0;
   background: var(--brand-400);
+}
+
+.heroCTA::after,
+.heroCTA::before {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.heroCTA::after {
+  bottom: -160px;
+  left: -16px;
+  background: rgba(var(--brand-RGB), 0.7);
+}
+
+.heroCTA::before {
+  width: 6rem;
+  height: 6rem;
+  bottom: -90px;
+  right: -80vw;
+  background: rgba(0, 0, 0, 0.6);
 }

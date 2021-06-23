@@ -10,13 +10,17 @@ export default function Hero() {
         <div>
           <Heading modifier="mb-6">
             Ask Buddie&apos;s
-            <span className="text-primary-400 mt-4 block">Bot Buddy !</span>
+            <span className="text-primary-400 mt-4 font-medium block">
+              Bot Buddy !
+            </span>
           </Heading>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
             qui.
           </p>
-          <Button modifier="mt-12 px-12 text-xl">Get Sexy</Button>
+          <Button modifier="mt-12 px-12 text-xl relative heroCTA">
+            Get Sexy!
+          </Button>
         </div>
         <div className="heroImage relative">
           <img src="/imgs/logo-full.png" alt="" />
