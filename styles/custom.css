@@ -3,44 +3,26 @@
   --brand-RGB: 202, 50, 47;
 }
 
-.heroImage::before,
-.heroImage::after {
+.heroContainer::after,
+.heroContainer::before {
   content: '';
   position: absolute;
-  z-index: -1;
-  width: 295px;
-  height: 420px;
-}
-
-.heroImage::before {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.heroImage::after {
-  top: -10vh;
-  right: 0;
-  background: var(--brand-400);
-}
-
-.heroCTA::after,
-.heroCTA::before {
-  content: '';
-  position: absolute;
+  z-index: 20;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
 
-.heroCTA::after {
-  bottom: -160px;
-  left: -16px;
+.heroContainer::before {
+  bottom: 0;
+  left: 1rem;
   background: rgba(var(--brand-RGB), 0.7);
 }
 
-.heroCTA::before {
+.heroContainer::after {
   width: 6rem;
   height: 6rem;
-  bottom: -90px;
-  right: -80vw;
-  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  right: 2rem;
+  background: #504f4f;
 }
