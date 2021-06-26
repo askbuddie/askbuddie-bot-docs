@@ -4,6 +4,7 @@ import Nav from '@components/Nav';
 import Hero from '@components/Landing/Hero';
 import Features from '@components/Landing/Features';
 import Community from '@components/Landing/Community';
+import About from '@components/Landing/About';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Features />
+      <About />
       <Community />
     </>
   );
