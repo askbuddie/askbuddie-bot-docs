@@ -10,13 +10,13 @@ function Cards({ details }) {
         return (
           <div
             key={index}
-            className="relative w-72 p-4 text-center rounded-xl shadow-xl"
+            className="relative w-72 p-4 text-center rounded-xl shadow-2xl"
           >
             <Icon className="w-16 absolute left-1/4 translate-x-1/2 -top-1/4 translate-y-1/2" />
             <Heading level={5} modifier="font-bold mb-4 mt-10">
               {title}
             </Heading>
-            <p>{description}</p>
+            <p className="opacity-80">{description}</p>
           </div>
         );
       })}
