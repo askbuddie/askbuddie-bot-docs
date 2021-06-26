@@ -26,3 +26,43 @@
   right: 2rem;
   background: #504f4f;
 }
+
+.communityWrap::before,
+.communityWrap::after {
+  content: '';
+  position: absolute;
+}
+
+.communityWrap::before {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: var(--brand-400);
+  top: -5rem;
+  right: -5rem;
+}
+
+.communityWrap::after {
+  z-index: -1;
+  right: -4rem;
+  bottom: -3rem;
+  width: 0;
+  height: 0;
+  border-bottom: 22rem solid rgba(var(--brand-RGB), 0.7);
+  border-left: 22rem solid transparent;
+}
+
+.communityImage::before,
+.communityImage::after {
+  content: '';
+  position: absolute;
+}
+
+.communityImage::before {
+  bottom: -3.75rem;
+  left: -3.75rem;
+  width: 0;
+  height: 0;
+  border-top: 3.75rem solid var(--brand-400);
+  border-left: 3.75rem solid transparent;
+}
