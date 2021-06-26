@@ -7,7 +7,7 @@ import Heading from '@components/Heading';
 export default function Hero() {
   return (
     <main className="relative">
-      <div className="container relative heroContainer min-h-screen flex items-center justify-between">
+      <div className="container relative heroContainer flex items-center justify-between">
         <div>
           <Heading modifier="mb-6">
             Ask Buddie&apos;s
@@ -19,13 +19,11 @@ export default function Hero() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
             qui.
           </p>
-          <Button modifier="mt-12 px-12 text-xl relative pointer">
-            Get Sexy!
-          </Button>
+          <Button modifier="mt-12 relative pointer">Get Sexy!</Button>
         </div>
-        <div className="relative">
+        <div>
           <img src="/imgs/logo-full.png" alt="" className="relative z-10" />
-          <Ellipses className="w-100 absolute bottom-0 left-0" />
+          <Ellipses className="absolute w-1/2 bottom-0 right-0" />
         </div>
       </div>
       <Wave className="absolute -z-1 -bottom-16 left-0" />
