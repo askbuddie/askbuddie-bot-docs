@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         primary: {
           400: '#ca322f'
-        }
+        },
+        lightRed: 'rgba(255,210,210,.46)'
       },
       fontFamily: {
         heading: ['Raleway'],

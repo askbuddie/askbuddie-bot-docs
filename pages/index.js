@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Nav from '@components/Nav';
+import Footer from '@components/Footer';
 import Hero from '@components/Landing/Hero';
 import Features from '@components/Landing/Features';
 import Community from '@components/Landing/Community';
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <About />
       <Community />
+      <Footer />
     </>
   );
 }
