@@ -1,4 +1,4 @@
-import Nav from '@components/Nav/Nav';
+import Nav from '@components/Nav';
 import Footer from '@components/Footer';
 import Hero from '@components/Landing/Hero';
 import Features from '@components/Landing/Features';

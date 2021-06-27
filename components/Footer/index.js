@@ -2,7 +2,6 @@ import React from 'react';
 
 import Heading from '@components/Heading';
 import Button from '@components/Button';
-import Logo from '@svgs/Footer/Logo.svg';
 
 function FooterMenu({ fakeMenuOptions, index }) {
   return (
@@ -86,11 +85,11 @@ const fakeMenuOptions = {
 
 function index(props) {
   return (
-    <div className="bg-lightRed w-full h-full py-20">
+    <footer className="bg-lightRed w-full h-full py-20">
       <div className=" grid grid-cols-2 w-10/12 h-auto mx-auto">
         <div className="w-full h-full">
           <div className="flex flex-col justify-center max-w-md">
-            <Logo />
+            Logo Here
             <p className="my-7 leading-tight">
               Lorem ipsum dolor sit amet consectetur adipisicing
               elitPraesentium, delectus officiis ducimus vero saepe aperiam ad
@@ -105,7 +104,7 @@ function index(props) {
           <FooterMenu fakeMenuOptions={fakeMenuOptions} index={2} />
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
