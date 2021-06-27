@@ -1,8 +1,11 @@
+import Head from 'next/head';
+
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
 import Hero from '@components/Landing/Hero';
 import Features from '@components/Landing/Features';
-import Head from 'next/head';
+import Community from '@components/Landing/Community';
+import About from '@components/Landing/About';
 
 export default function Home() {
   return (
@@ -13,6 +16,8 @@ export default function Home() {
       <Nav />
       <Hero />
       <Features />
+      <About />
+      <Community />
       <Footer />
     </>
   );

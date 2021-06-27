@@ -22,7 +22,89 @@
 .heroContainer::after {
   width: 6rem;
   height: 6rem;
-  bottom: 0;
+  bottom: -3rem;
   right: 2rem;
   background: #504f4f;
+}
+
+.communityWrap::before,
+.communityWrap::after {
+  content: '';
+  position: absolute;
+}
+
+.communityWrap::before {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: var(--brand-400);
+  top: -5rem;
+  right: -5rem;
+}
+
+.communityWrap::after {
+  z-index: -1;
+  right: -4rem;
+  bottom: -3rem;
+  width: 0;
+  height: 0;
+  border-bottom: 22rem solid rgba(var(--brand-RGB), 0.7);
+  border-left: 22rem solid transparent;
+}
+
+.communityImage::before,
+.communityImage::after {
+  content: '';
+  position: absolute;
+}
+
+.communityImage::before {
+  bottom: -3.75rem;
+  left: -3.75rem;
+  width: 0;
+  height: 0;
+  border-top: 3.75rem solid var(--brand-400);
+  border-left: 3.75rem solid transparent;
+}
+
+.aboutContainer {
+  background: rgba(231, 106, 106, 0.1);
+}
+
+.aboutSideImage::after {
+  content: '';
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  z-index: -1;
+  top: 80px;
+  left: -200px;
+}
+
+.aboutSideImage::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(80, 79, 79, 1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.aboutRedCircleAlias::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--brand-400);
+  border-radius: 50%;
+  z-index: -4;
+  top: -50px;
+  left: -64px;
+}
+
+.aboutBlock {
+  width: 447px;
 }
