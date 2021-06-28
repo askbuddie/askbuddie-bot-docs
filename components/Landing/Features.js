@@ -4,7 +4,7 @@ import Tweaks from '@svgs/tweaks.svg';
 
 function Cards({ details }) {
   return (
-    <div className="mt-24 pb-16 flex flex-wrap justify-around items-center">
+    <div className="container mt-24 pb-16 flex flex-wrap justify-around items-center">
       {details.map((detail, index) => {
         const { title, description, Icon } = detail;
         return (
