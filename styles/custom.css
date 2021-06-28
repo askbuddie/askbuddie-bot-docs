@@ -71,7 +71,7 @@
   background: rgba(231, 106, 106, 0.1);
 }
 
-.aboutSideImage::after {
+.aboutSideImageWrap::after {
   content: '';
   position: absolute;
   width: 550px;
@@ -83,7 +83,7 @@
   left: -200px;
 }
 
-.aboutSideImage::before {
+.aboutSideImageWrap::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -91,6 +91,8 @@
   background: rgba(80, 79, 79, 1);
   border-radius: 50%;
   z-index: -1;
+  top: -54px;
+  left: 16px;
 }
 
 .aboutRedCircleAlias::before {
@@ -101,8 +103,8 @@
   background: var(--brand-400);
   border-radius: 50%;
   z-index: -4;
-  top: -50px;
-  left: -64px;
+  top: -105px;
+  left: -44px;
 }
 
 .aboutBlock {

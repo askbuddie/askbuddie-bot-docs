@@ -19,6 +19,16 @@ module.exports = {
       },
       zIndex: {
         '-1': '-1'
+      },
+      backgroundImage: () => ({
+        'github-screen': 'url(/imgs/github-screen.png)',
+        robot: 'url(/imgs/robot.png)'
+      }),
+      width: {
+        108: '36rem'
+      },
+      height: {
+        104: '32rem'
       }
     }
   },
