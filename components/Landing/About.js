@@ -4,7 +4,7 @@ import WaveSm from '@svgs/wave-sm.svg';
 
 export default function About() {
   return (
-    <div className="aboutContainer flex flex-col px-14 pt-14 relative">
+    <section className="aboutContainer flex flex-col px-14 pt-14 relative">
       <div className="mb-20">
         <Heading level={3} modifier="text-center">
           We are <span className="text-primary-400">Open Source</span> &amp; we
@@ -22,7 +22,7 @@ export default function About() {
         </div>
       </div>
       <WaveSm className="absolute -z-1 bottom-0 right-0" />
-    </div>
+    </section>
   );
 }
 
