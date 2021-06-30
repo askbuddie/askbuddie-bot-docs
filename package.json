@@ -12,7 +12,8 @@
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "source-map-js": "^0.6.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
