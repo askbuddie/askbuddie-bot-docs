@@ -26,7 +26,7 @@ export default function Hero() {
           <Ellipses className="absolute w-1/2 bottom-0 right-0" />
         </div>
       </div>
-      <Wave className="absolute -z-1 -bottom-16 left-0" />
+      <Wave className="max-h-screen-sm absolute -z-1 -bottom-16 left-0" />
     </main>
   );
 }
