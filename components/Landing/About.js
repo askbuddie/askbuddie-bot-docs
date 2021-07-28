@@ -21,7 +21,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <WaveSm className="absolute -z-1 bottom-0 right-0" />
+      <WaveSm className="max-h-screen-sm absolute -z-1 bottom-0 right-0" />
     </section>
   );
 }
