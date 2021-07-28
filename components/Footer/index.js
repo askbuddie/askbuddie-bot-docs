@@ -83,7 +83,7 @@ const fakeMenuOptions = {
   }
 };
 
-function index(props) {
+function index() {
   return (
     <footer className="bg-lightRed w-full h-full py-20">
       <div className=" grid grid-cols-2 w-10/12 h-auto mx-auto">
