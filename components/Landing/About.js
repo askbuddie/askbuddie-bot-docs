@@ -4,11 +4,11 @@ import WaveSm from '@svgs/wave-sm.svg';
 
 export default function About() {
   return (
-    <section className="aboutContainer flex flex-col px-14 pt-14 relative z-0">
+    <section className="bg-brand-faded-1 flex flex-col px-14 pt-14 relative z-0">
       <div className="container mb-20">
         <Heading level={3} modifier="text-center">
-          We are <span className="text-primary-400">Open Source</span> &amp; we
-          love <span className="text-primary-400">Open Source</span>
+          We are <span className="text-brand-400">Open Source</span> &amp; we
+          love <span className="text-brand-400">Open Source</span>
         </Heading>
         <div className="flex justify-around mt-10">
           <div className="mt-28">
@@ -31,9 +31,9 @@ function SideImage() {
     <div className="aboutSideImageWrap h-0 relative">
       <div className="aboutRedCircleAlias"></div>
       <div className="bg-github-screen rounded-3xl bg-cover bg-center bg-no-repeat w-108 h-104 ">
-        <div className="rounded-3xl absolute -top-10 left-8 w-108 h-104 border-4 border-white">
+        <div className="rounded-3xl absolute -top-10 left-8 w-108 h-104 border-4 border-white-400">
           <div className="bg-robot rounded-3xl bg-cover bg-center bg-no-repeat w-64 h-64 absolute top-20 left-96 flex justify-center items-center">
-            <div className="rounded-3xl absolute w-60 h-60 border-4 border-white"></div>
+            <div className="rounded-3xl absolute w-60 h-60 border-4 border-white-400"></div>
           </div>
         </div>
       </div>

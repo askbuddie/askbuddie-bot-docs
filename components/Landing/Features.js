@@ -48,8 +48,8 @@ export default function Features() {
   return (
     <section className="mt-28">
       <Heading level={4} modifier="text-center">
-        <span className="text-primary-400">Ask Buddie's Bot</span> is the best
-        bot in the word(probably)
+        <span className="text-brand-400">Ask Buddie's Bot</span> is the best bot
+        in the word(probably)
       </Heading>
       <Heading level={5} modifier="text-center mt-2">
         Here are the basic features of the bot

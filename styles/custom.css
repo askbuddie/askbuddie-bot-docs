@@ -1,6 +1,46 @@
 :root {
-  --brand-400: #ca322f;
-  --brand-RGB: 202, 50, 47;
+  --brand-HS: 1, 77%;
+  --brand-HSL: var(--brand-HS), 55%;
+
+  --black-HS: 0, 0%;
+  --black-HSL: var(--black-HS), 18%;
+
+  --white-HS: 0, 0%;
+  --white-HSL: var(--white-HS), 100%;
+
+  --brand-300: hsl(var(--brand-HS), 75%);
+  --brand-400: hsl(var(--brand-HSL));
+  --brand-500: hsl(var(--brand-HS), 35%);
+
+  --black-300: hsl(var(--black-HS), 28%);
+  --black-400: hsl(var(--black-HSL));
+
+  --white-300: hsl(var(--white-HS), 90%);
+  --white-400: hsl(var(--white-HSL));
+
+  /* With opacity */
+
+  --brand-faded-9: hsla(var(--brand-HSL), 0.9);
+  --brand-faded-7: hsla(var(--brand-HSL), 0.7);
+  --brand-faded-5: hsla(var(--brand-HSL), 0.5);
+  --brand-faded-3: hsla(var(--brand-HSL), 0.3);
+  --brand-faded-1: hsla(var(--brand-HSL), 0.1);
+
+  --black-faded-9: hsla(var(--black-HSL), 0.9);
+  --black-faded-7: hsla(var(--black-HSL), 0.7);
+  --black-faded-5: hsla(var(--black-HSL), 0.5);
+  --black-faded-3: hsla(var(--black-HSL), 0.3);
+  --black-faded-1: hsla(var(--black-HSL), 0.1);
+
+  --white-faded-9: hsla(var(--white-HSL), 0.9);
+  --white-faded-7: hsla(var(--white-HSL), 0.7);
+  --white-faded-5: hsla(var(--white-HSL), 0.5);
+  --white-faded-3: hsla(var(--white-HSL), 0.3);
+  --white-faded-1: hsla(var(--white-HSL), 0.1);
+}
+
+body {
+  color: var(--black-400);
 }
 
 .heroContainer::after,
@@ -16,7 +56,7 @@
 .heroContainer::before {
   bottom: 0;
   left: 1rem;
-  background: rgba(var(--brand-RGB), 0.7);
+  background: var(--brand-faded-7);
 }
 
 .heroContainer::after {
@@ -24,7 +64,7 @@
   height: 6rem;
   bottom: -3rem;
   right: 2rem;
-  background: #504f4f;
+  background: var(--black-400);
 }
 
 .communityWrap::before,
@@ -48,7 +88,7 @@
   bottom: -3rem;
   width: 0;
   height: 0;
-  border-bottom: 22rem solid rgba(var(--brand-RGB), 0.7);
+  border-bottom: 22rem solid var(--brand-faded-7);
   border-left: 22rem solid transparent;
 }
 
@@ -67,16 +107,12 @@
   border-left: 3.75rem solid transparent;
 }
 
-.aboutContainer {
-  background: rgba(231, 106, 106, 0.1);
-}
-
 .aboutSideImageWrap::after {
   content: '';
   position: absolute;
   width: 550px;
   height: 550px;
-  background-color: #cdcdcd;
+  background-color: ;
   border-radius: 50%;
   z-index: -1;
   top: 80px;
@@ -88,7 +124,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background: rgba(80, 79, 79, 1);
+  background: var(--black-300);
   border-radius: 50%;
   z-index: -1;
   top: -54px;

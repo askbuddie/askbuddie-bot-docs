@@ -11,7 +11,7 @@ export default function Hero() {
         <div>
           <Heading modifier="mb-6">
             Ask Buddie&apos;s
-            <span className="text-primary-400 mt-4 font-bold block">
+            <span className="text-brand-400 mt-4 font-bold block">
               Bot Buddy !
             </span>
           </Heading>

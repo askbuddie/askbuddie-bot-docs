@@ -85,7 +85,7 @@ const fakeMenuOptions = {
 
 function index() {
   return (
-    <footer className="bg-lightRed w-full h-full py-20">
+    <footer className="bg-brand-faded-1 w-full h-full py-20">
       <div className=" grid grid-cols-2 w-10/12 h-auto mx-auto">
         <div className="w-full h-full">
           <div className="flex flex-col justify-center max-w-md">
