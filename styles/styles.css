@@ -8,7 +8,7 @@
 
 @layer components {
   .btn {
-    @apply w-max px-10 py-4 text-xl font-medium rounded-md bg-brand-400 text-white-400;
+    @apply w-max px-4 py-2 md:px-10 md:py-4 text-base md:text-xl font-medium rounded-md bg-brand-400 text-white-400;
   }
 
   .btn--outline {
