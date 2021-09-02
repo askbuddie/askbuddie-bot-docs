@@ -54,6 +54,11 @@ body {
 }
 
 .heroContainer::before {
+  top: 25%;
+  left: 0;
+  background: var(--brand-faded-7);
+}
+.heroContainer::before {
   bottom: 0;
   left: 1rem;
   background: var(--brand-faded-7);
