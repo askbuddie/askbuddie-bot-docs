@@ -58,7 +58,7 @@ body {
   left: 0;
   background: var(--brand-faded-7);
 }
-@media (media-width: 768px){
+@media (min-width: 768px){
 .heroContainer::before {
   top:unset;
   bottom: 0;
