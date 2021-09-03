@@ -4,7 +4,7 @@ import Tweaks from '@svgs/tweaks.svg';
 
 function Cards({ details }) {
   return (
-    <div className="mt-24 pb-16 flex flex-wrap justify-around items-center container">
+    <div className="mt-24 pb-16 flex flex-wrap gap-28 md:gap-16 justify-around items-center container">
       {details.map((detail, index) => {
         const { title, description, Icon } = detail;
         return (
@@ -46,7 +46,7 @@ export default function Features() {
     }
   ];
   return (
-    <section className="mt-28">
+    <section className="mt-28 px-2">
       <Heading level={4} modifier="text-center">
         <span className="text-brand-400">Ask Buddie's Bot</span> is the best bot
         in the word(probably)
