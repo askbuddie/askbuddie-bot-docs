@@ -45,8 +45,8 @@ module.exports = {
         '-1': '-1'
       },
       backgroundImage: () => ({
-        'github-screen': 'url(/imgs/github-screen.png)',
-        robot: 'url(/imgs/robot.png)'
+        'github-screen': 'url(/imgs/github-screen.jpg)',
+        robot: 'url(/imgs/robot.jpg)'
       }),
       width: {
         108: '36rem'
