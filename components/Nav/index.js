@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Nav() {
   return (
-    <nav className="w-screen">
+    <nav className="w-screen px-2">
       <div className="container py-4">
         <Link href="/">Logo here</Link>
       </div>
