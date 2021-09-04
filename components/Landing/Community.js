@@ -7,9 +7,9 @@ import Wave from '@svgs/wave.svg';
 
 export default function Community() {
   return (
-    <section className="relative min-h-screen pt-40 pb-28 flex">
-      <div className="communityWrap relative max-w-5xl w-full  m-auto flex items-end bg-white-400 drop-shadow-2xl p-10 rounded-l-3xl">
-        <div className="w-80">
+    <section className="relative min-h-screen px-2 pt-16 lg:pt-40 pb-28 flex">
+      <div className="communityWrap relative max-w-5xl w-full lg:m-auto flex flex-col-reverse lg:flex-row items-end lg:bg-white-400 lg:drop-shadow-2xl lg:p-10 rounded-l-3xl">
+        <div className="lg:w-80 pt-8 lg:pt-0">
           <Heading level={2} modifier="mb-8">
             Join our <span className="text-brand-400">Facebook</span> Community!
           </Heading>
@@ -26,7 +26,7 @@ export default function Community() {
             Join Now
           </Link>
         </div>
-        <div className="communityImage h-3/4 w-3/5 p-2 bg-white-400 absolute rounded-br-3xl bottom-0 -right-8">
+        <div className="communityImage h-3/4 lg:w-3/5 p-2 bg-white-400 relative lg:absolute rounded-br-3xl bottom-0 lg:-right-8">
           <img
             src="/imgs/fb.png"
             alt="Ask Buddie Facebook Community"
