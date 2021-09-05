@@ -98,11 +98,6 @@ function index() {
             <Button modifier="px-12 text-xl heroCTA">Join Now</Button>
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-3">
-          <FooterMenu fakeMenuOptions={fakeMenuOptions} index={0} />
-          <FooterMenu fakeMenuOptions={fakeMenuOptions} index={1} />
-          <FooterMenu fakeMenuOptions={fakeMenuOptions} index={2} />
-        </div>
       </div>
     </footer>
   );
