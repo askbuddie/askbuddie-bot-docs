@@ -31,7 +31,7 @@ function SideImage() {
     <div className="aboutSideImageWrap h-0 relative">
       <div className="aboutRedCircleAlias"></div>
       <div className="bg-github-screen rounded-3xl bg-cover bg-center bg-no-repeat w-80 xl:w-108 h-80 xl:h-104">
-        <div className="rounded-3xl absolute -top-10 left-4 w-80 xl:w-108 h-80 xl:h-104 border-4 border-white-400">
+        <div className="rounded-3xl absolute -top-7 left-4 w-80 xl:w-108 h-80 xl:h-104 border-4 border-white-400">
           <div className="bg-robot rounded-3xl bg-cover bg-center bg-no-repeat w-64 h-64 absolute top-20 left-36 xl:left-96 flex justify-center items-center">
             <div className="rounded-3xl absolute w-60 h-60 border-4 border-white-400"></div>
           </div>
