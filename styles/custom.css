@@ -90,7 +90,7 @@ body {
   right: -5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .communityWrap::after {
     z-index: -1;
     right: -4rem;
@@ -100,20 +100,17 @@ body {
     border-bottom: 22rem solid var(--brand-faded-7);
     border-left: 22rem solid transparent;
   }
-}
-.communityImage::before,
-.communityImage::after {
-  content: '';
-  position: absolute;
-}
 
-.communityImage::before {
-  bottom: -3.75rem;
-  left: -3.75rem;
-  width: 0;
-  height: 0;
-  border-top: 3.75rem solid var(--brand-400);
-  border-left: 3.75rem solid transparent;
+  .communityImage::before {
+    content: '';
+    position: absolute;
+    bottom: -3.75rem;
+    left: -3.75rem;
+    width: 0;
+    height: 0;
+    border-top: 3.75rem solid var(--brand-400);
+    border-left: 3.75rem solid transparent;
+  }
 }
 
 .aboutSideImageWrap::after {
