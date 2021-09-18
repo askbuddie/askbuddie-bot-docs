@@ -50,7 +50,7 @@ function Block({ title }) {
       >
         {title}
       </Heading>
-      <p>
+      <p className="text-center xl:text-left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum
         perferendis cumque suscipit asperiores repellendus magni totam,
         quibusdam eaque esse dolores, quia temporibus aperiam dolorem
