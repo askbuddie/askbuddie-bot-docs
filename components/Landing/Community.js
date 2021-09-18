@@ -8,7 +8,7 @@ import Wave from '@svgs/wave.svg';
 export default function Community() {
   return (
     <section className="relative min-h-screen px-2 pt-16 lg:pt-40 pb-28 flex overflow-x-hidden">
-      <div className="communityWrap relative max-w-5xl w-full lg:m-auto flex flex-col-reverse lg:flex-row items-end lg:bg-white-400 lg:drop-shadow-2xl lg:p-10 rounded-l-3xl">
+      <div className="communityWrap container relative xl:max-w-5xl w-full lg:m-auto flex flex-col-reverse lg:flex-row items-end lg:bg-white-400 lg:drop-shadow-2xl lg:p-10 rounded-l-3xl">
         <div className="lg:w-80 pt-8 lg:pt-0">
           <Heading level={2} modifier="mb-8">
             Join our <span className="text-brand-400">Facebook</span> Community!
