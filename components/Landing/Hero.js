@@ -1,7 +1,7 @@
 import React from 'react';
 import Wave from '@svgs/wave.svg';
 import Ellipses from '@svgs/heroEllipses.svg';
-import Button from '@components/Button';
+import Link from '@components/Link';
 import Heading from '@components/Heading';
 
 export default function Hero() {
@@ -19,7 +19,9 @@ export default function Hero() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
             qui.
           </p>
-          <Button modifier="mt-12 relative pointer">Get Sexy!</Button>
+          <Link to="/docs" className="btn block mt-12 relative pointer">
+            Get Sexy!
+          </Link>
         </div>
         <div className="relative w-72 md:w-1/2 md:static">
           <img
