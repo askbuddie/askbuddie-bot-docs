@@ -2,21 +2,19 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import Layout from '@components/Layout';
-import Link from '@components/Link';
+import Nav from '@components/Nav';
+import Heading from '@components/Heading';
+import Hamburger from '@components/Hamburger';
 
 export default function Docs({ filenames }) {
   return (
     <Layout title="Documentation">
-      <h1 className="text-3xl font-extrabold text-black mb-4">
-        Hello from docs
-      </h1>
-      <nav>
-        {filenames.map((filename, index) => (
-          <Link key={index} to={`docs/${filename.replace(/\s/g, '-')}`}>
-            {filename}
-          </Link>
-        ))}
-      </nav>
+      <Nav>
+        <Hamburger menuContent={filenames} />
+      </Nav>
+      <div className="container min-h-screen">
+        <Heading modifier="px-2">Hello from docs</Heading>
+      </div>
     </Layout>
   );
 }
