@@ -23,7 +23,7 @@ export default function Docs({ filenames }) {
 
 export function getStaticProps() {
   const filenames = fs
-    .readdirSync(path.resolve(__dirname, '../../../content'))
+    .readdirSync(path.resolve(__dirname, '../../../docs'))
     .map((filename) => filename.replace(/-/g, ' ').split('.md')[0]); // 'example-doc-one.md' will be 'example doc one'
 
   return {

@@ -14,12 +14,12 @@ export default function Content({ filenames, title, content }) {
 
 export async function getStaticProps({ params }) {
   const filenames = fs
-    .readdirSync(path.resolve(__dirname, '../../../../content'))
+    .readdirSync(path.resolve(__dirname, '../../../../docs'))
     .map((filename) => filename.split('.md')[0]);
 
   const filePath = path.resolve(
     __dirname,
-    `../../../../content/${params.title}.md`
+    `../../../../docs/${params.title}.md`
   );
   const content = fs.readFileSync(filePath, 'utf8');
   return {
@@ -32,9 +32,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths(context) {
-  const filenames = fs.readdirSync(
-    path.resolve(__dirname, '../../../../content')
-  );
+  const filenames = fs.readdirSync(path.resolve(__dirname, '../../../../docs'));
   const paths = filenames.map((filename) => {
     return { params: { title: filename.split('.md')[0] } };
   });
