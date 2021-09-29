@@ -1,14 +1,14 @@
 import { React, useState } from 'react';
 import Link from '@components/Link';
 
-export default function DocsNav({ menuContent }) {
+export default function Hamburger({ menuContent }) {
   const [hambugerClicked, setHamburgerClicked] = useState(false);
 
   function hamburgerClassName() {
     const base =
       'hamburger transition-transform duration-300 ease-linear cursor-pointer mx-2 fixed right-0 z-10 w-10 h-1 bg-black-400 rounded-lg';
 
-    return hambugerClicked ? `${base} hamburger--active` : base;
+    return hambugerClicked ? `${base} bg-white-400 hamburger--active` : base;
   }
 
   function ulClassName() {
