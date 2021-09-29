@@ -6,7 +6,7 @@ export default function DocsNav({ menuContent }) {
 
   function hamburgerClassName() {
     const base =
-      'hamburger transition-transform duration-300 ease-linear cursor-pointer mx-2 absolute right-0 z-10 w-10 h-1 bg-black-400 rounded-lg';
+      'hamburger transition-transform duration-300 ease-linear cursor-pointer mx-2 fixed right-0 z-10 w-10 h-1 bg-black-400 rounded-lg';
 
     return hambugerClicked ? `${base} hamburger--active` : base;
   }
