@@ -14,12 +14,12 @@ export default function Content({ filenames, title, content }) {
 
 export async function getStaticProps({ params }) {
   const filenames = fs
-    .readdirSync(path.resolve(__dirname, '../../../../docs'))
+    .readdirSync(path.resolve(__dirname, '../../../../../docs'))
     .map((filename) => filename.split('.md')[0]);
 
   const filePath = path.resolve(
     __dirname,
-    `../../../../docs/${params.title}.md`
+    `../../../../../docs/${params.category}/${params.title}.md`
   );
   const content = fs.readFileSync(filePath, 'utf8');
   return {
@@ -32,9 +32,18 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths(context) {
-  const filenames = fs.readdirSync(path.resolve(__dirname, '../../../../docs'));
-  const paths = filenames.map((filename) => {
-    return { params: { title: filename.split('.md')[0] } };
+  const folderNames = fs.readdirSync(
+    path.resolve(__dirname, '../../../../../docs')
+  );
+  const paths = [];
+  folderNames.forEach((folderName) => {
+    fs.readdirSync(
+      path.resolve(__dirname, `../../../../../docs/${folderName}`)
+    ).forEach((fileName) => {
+      paths.push({
+        params: { title: `${fileName.split('.md')[0]}`, category: folderName }
+      });
+    });
   });
 
   return {
