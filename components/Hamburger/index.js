@@ -25,9 +25,20 @@ export default function Hamburger({ menuContent }) {
         onClick={() => setHamburgerClicked(!hambugerClicked)}
       ></div>
       <ul className={ulClassName()}>
-        {menuContent.map((filename, index) => (
+        {Object.keys(menuContent).map((folderName, index) => (
           <li key={index}>
-            <Link to={`docs/${filename.replace(/\s/g, '-')}`}>{filename}</Link>
+            <details>
+              <summary>{folderName.replace(/-/g, ' ')}</summary>
+              {menuContent[folderName].map((filename, index) => (
+                <Link
+                  key={index}
+                  to={`/docs/${folderName}/${filename.replace(/\s/g, '-')}`}
+                  onClick={() => setHamburgerClicked(false)}
+                >
+                  {filename.replace(/-/g, ' ')}
+                </Link>
+              ))}
+            </details>
           </li>
         ))}
       </ul>

@@ -6,11 +6,11 @@ import Nav from '@components/Nav';
 import Heading from '@components/Heading';
 import Hamburger from '@components/Hamburger';
 
-export default function Docs({ filenames }) {
+export default function Docs({ folderFileMap }) {
   return (
     <Layout title="Documentation">
       <Nav>
-        <Hamburger menuContent={filenames} />
+        <Hamburger menuContent={folderFileMap} />
       </Nav>
       <div className="container min-h-screen">
         <Heading modifier="px-2">Hello from docs</Heading>
@@ -20,13 +20,26 @@ export default function Docs({ filenames }) {
 }
 
 export function getStaticProps() {
-  const filenames = fs
-    .readdirSync(path.resolve(__dirname, '../../../docs'))
-    .map((filename) => filename.replace(/-/g, ' ').split('.md')[0]); // 'example-doc-one.md' will be 'example doc one'
+  const folderNames = fs.readdirSync(path.resolve(__dirname, '../../../docs'));
+  const folderFileMap = {};
+  folderNames.forEach((folderName) => {
+    fs.readdirSync(
+      path.resolve(__dirname, `../../../docs/${folderName}`)
+    ).forEach((fileName) => {
+      if (!folderFileMap[folderName]) {
+        folderFileMap[folderName] = [fileName.split('.md')[0]];
+      } else {
+        folderFileMap[folderName] = [
+          ...folderFileMap[folderName],
+          fileName.split('.md')[0]
+        ];
+      }
+    });
+  });
 
   return {
     props: {
-      filenames
+      folderFileMap
     }
   };
 }
