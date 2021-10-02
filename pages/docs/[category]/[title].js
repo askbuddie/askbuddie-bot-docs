@@ -2,29 +2,51 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import Layout from '@components/Layout';
+import Nav from '@components/Nav';
+import Hamburger from '@components/Hamburger';
 import Article from '@components/Article';
 
-export default function Content({ filenames, title, content }) {
+export default function Content({ folderFileMap, title, content }) {
   return (
     <Layout title={title}>
+      <Nav>
+        <Hamburger menuContent={folderFileMap} />
+      </Nav>
       <Article title={title} content={content} />
     </Layout>
   );
 }
 
 export async function getStaticProps({ params }) {
-  const filenames = fs
-    .readdirSync(path.resolve(__dirname, '../../../../../docs'))
-    .map((filename) => filename.split('.md')[0]);
+  const folderNames = fs.readdirSync(
+    path.resolve(__dirname, '../../../../../docs')
+  );
+
+  const folderFileMap = {};
+  folderNames.forEach((folderName) => {
+    fs.readdirSync(
+      path.resolve(__dirname, `../../../../../docs/${folderName}`)
+    ).forEach((fileName) => {
+      if (!folderFileMap[folderName]) {
+        folderFileMap[folderName] = [fileName.split('.md')[0]];
+      } else {
+        folderFileMap[folderName] = [
+          ...folderFileMap[folderName],
+          fileName.split('.md')[0]
+        ];
+      }
+    });
+  });
 
   const filePath = path.resolve(
     __dirname,
     `../../../../../docs/${params.category}/${params.title}.md`
   );
   const content = fs.readFileSync(filePath, 'utf8');
+
   return {
     props: {
-      filenames,
+      folderFileMap,
       title: params.title.replace(/-/g, ' '),
       content
     }
