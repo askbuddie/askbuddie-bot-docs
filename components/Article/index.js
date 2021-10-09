@@ -1,11 +1,12 @@
 import React from 'react';
-import marked from 'marked';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export default function Article({ title, content }) {
   return (
     <article>
       <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </article>
   );
 }
