@@ -5,6 +5,7 @@ export default function Link({
   to,
   newTab = false,
   className = '',
+  onClick = () => {},
   title = null,
   children
 }) {
@@ -24,7 +25,7 @@ export default function Link({
 
   return (
     <NextLink href={to}>
-      <a href={to} className={className}>
+      <a href={to} className={className} onClick={onClick}>
         {children}
       </a>
     </NextLink>
