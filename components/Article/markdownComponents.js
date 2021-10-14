@@ -1,11 +1,15 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import Heading from '@components/Heading';
+import Link from '@components/Link';
 
 function reusableHeadingComponent(level, children) {
+  const hashtag = children[0].toLowerCase().replace(/\s/g, '-');
   return (
-    <Heading level={level + 1} modifier="my-4">
-      {children}
-    </Heading>
+    <Link to={`#${hashtag}`}>
+      <Heading id={hashtag} level={level + 1} modifier="my-4">
+        {children}
+      </Heading>
+    </Link>
   );
 }
 
