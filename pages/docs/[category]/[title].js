@@ -53,7 +53,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths(context) {
+export async function getStaticPaths() {
   const folderNames = fs.readdirSync(
     path.resolve(__dirname, '../../../../../docs')
   );

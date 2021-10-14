@@ -14,7 +14,7 @@ function reusableHeadingComponent(level, children) {
 }
 
 const markdownComponents = {
-  code({ node, inline, className, children, ...props }) {
+  code({ inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || '');
     return !inline && match ? (
       <SyntaxHighlighter language={match[1]} PreTag="div" {...props}>
