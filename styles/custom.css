@@ -148,3 +148,36 @@ body {
   top: -105px;
   left: -44px;
 }
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  --height: 0.25rem /*tailwind: h-1*/;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+  transition: transform 0.3s linear;
+}
+
+.hamburger::before {
+  top: calc(var(--height) * -2);
+  transition: opacity 0.3s linear;
+}
+
+.hamburger::after {
+  top: calc(var(--height) * 2);
+}
+
+.hamburger--active {
+  transform: rotate(45deg);
+}
+
+.hamburger--active::before {
+  opacity: 0;
+}
+
+.hamburger--active::after {
+  transform: rotate(-90deg) translateX(4px);
+}
