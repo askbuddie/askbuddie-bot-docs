@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Heading({ level = 1, children, modifier }) {
+export default function Heading({ id = '', level = 1, children, modifier }) {
   let HeadingLevel, headingClass;
 
   switch (level) {
@@ -30,7 +30,10 @@ export default function Heading({ level = 1, children, modifier }) {
   }
 
   return (
-    <HeadingLevel className={`font-heading ${headingClass} ${modifier}`}>
+    <HeadingLevel
+      id={id}
+      className={`font-heading ${headingClass} ${modifier}`}
+    >
       {children}
     </HeadingLevel>
   );
